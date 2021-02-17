@@ -43,7 +43,7 @@ class App extends Component {
       if(location.country === 'India') return location
     })
     let result = new_city.map((city, index) => (
-      <li key={`location${index}`}>{city.name}</li>
+      <li key={`location${index+1}`}>{city.name}</li>
     ))
     return result
   }
